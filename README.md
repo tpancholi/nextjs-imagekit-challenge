@@ -2,15 +2,31 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+- create `.env` file similar to `.env.example`
+
+- update `.env` file with your api keys
+
+- install project dependencies
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+bun install
+```
+
+- setup db
+
+```bash
+bun db:generate
+```
+
+- migrate db
+
+```bun
+bun db:migrate
+```
+
+- run the development server:
+
+```bash
 bun dev
 ```
 
